@@ -19,7 +19,7 @@ Welcome to my simple website project! This website showcases a basic HTML and CS
 
 To get a local copy of this project up and running, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/simple-website.git`
+1. Clone this repository: `git clone https://github.com/hellena254/Decor.git`
 2. Navigate to the project directory: `cd decor`
 3. Open `index.html` in your web browser to see the website
 
