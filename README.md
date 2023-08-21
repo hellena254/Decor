@@ -1,4 +1,4 @@
-# Simple Website
+# Simple Decor Website
 
 Welcome to my simple website project! This website showcases a basic HTML and CSS layout that can be used as a starting point for building more complex web applications.
 
