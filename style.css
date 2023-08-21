@@ -1,0 +1,336 @@
+:root{
+    --black: #222;
+    --white-bg: #f5f5f5;
+    --non-white-bg: burlywood;
+    --blue: rgb(4, 4, 63);
+}
+
+*{
+    font-family:  Verdana;
+    font-size: 16px;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Landing Page  */
+section{
+    margin-bottom: 7%;
+}
+
+section.header {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image:-webkit-linear-gradient(rgba(4,9,40,0.3),rgba(4,9,40,0.7)), url("Images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    /* margin-bottom: 7%; */
+}
+
+section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+nav .logo span {
+    color:  var(--white-bg);
+    font-size: 2rem;
+}
+
+nav .nav-links {
+    text-align: right;
+}
+
+nav .nav-links .bx{
+    display: none;
+}
+
+nav .nav-links ul li {
+    display: inline;
+    position: relative;
+    padding: 8px 12px;
+}
+
+nav .nav-links ul li a {
+    text-decoration: none;
+    color: var(--white-bg);
+    padding: 3px 9px;
+    font-size: 1rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+nav .nav-links ul li a:hover{
+    color: var(--blue);
+    background-color: var(--non-white-bg);
+    border-radius: 10px;
+}
+
+.header .header_info {
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    text-transform: capitalize;
+}
+
+.header .header_info h1{
+    font-size: 4rem;
+    color: var(--white-bg);
+    letter-spacing: 1px;
+}
+
+.header .header_info h2{
+    font-size: 3rem;
+    color: var(--white-bg);
+}
+
+
+/* Articles  */
+section .article {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 7%;
+    margin: auto;
+    position: relative;
+}
+
+.article h2{
+    font-size: 2.5rem;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.article .article_decor {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-bg);
+    padding: 30px;
+}
+
+.article .decor {
+    flex-basis: 31%;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.2);
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: .5s;
+}
+
+.article .decor:hover{
+    box-shadow: 5px 9px 9px 6px rgba(0,0,0, 0.8);
+}
+
+.article .article_decor .decor img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 2rem;
+}
+
+.article .article_decor .decor p{
+    font-weight: 500;
+}
+
+/* About */
+section .about {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 7%;
+    margin: auto;
+    position: relative;
+}
+
+.about .about_decor {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about .about_decor .about_img img {
+    width: 45rem;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1rem; 
+}
+
+.about .about_decor .about_text{
+    text-align: center;
+    padding: 30px;
+    margin-top: 5%;
+}
+
+.about_decor .about_text h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--blue);
+    margin-bottom: 3%;
+}
+
+section .subscribe {
+    text-align: center;
+    margin-bottom: 7%;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.subscribe .sub_info {
+    text-align: center;
+    background-color: var(--white-bg);
+    margin-top: 5%;
+    padding: 30px;
+}
+
+.subscribe .sub_info h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--blue);
+    margin-bottom: 1%;
+}
+
+.subscribe .sub_info p {
+    margin-bottom: 1%;
+}
+
+.subscribe .sub_info .signup_text {
+    margin-top: 2%;
+}
+
+.sub_info .signup_text button{
+    position: relative;
+    cursor: pointer;
+    font-size: 1rem;
+    background: transparent;
+    font-weight: 300;
+    margin-top: 2%;
+    padding: 10px 30px;
+    border: 1px solid var(--blue);
+    transition: .5s;
+}
+
+.sub_info .signup_text {}
+
+
+.sub_info .signup_text button:hover{
+    background-color: var(--blue);
+    color: var(--white-bg);
+}
+
+
+/* Footer  */
+section .footer{
+    position: relative;
+}
+
+.footer .footer_info{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding:  32px 0;
+    width: 100%;
+
+}
+
+.footer .icons .bx {
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin: 0 7px; 
+    color: var(--blue);
+    transition: .5s;
+}
+
+.footer .icons .bx:hover {
+    color : var(--white-bg);
+    background-color: var(--non-white-bg);
+    box-shadow: 2px 4px rgba(0,0,0,0.2);
+}
+
+.footer  p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer  p .bx{
+    color: var(--blue);
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px){ 
+    section{
+        margin-bottom: 10%;
+    }
+    /* landing page  */
+    .nav-links ul{
+        display: none;
+    }
+    
+    .header .header_info h1{
+        font-size: 3rem;
+    }
+
+    .header .header_info h2{
+        font-size: 1.5rem;
+    }
+
+    .header nav .nav-links{
+        padding: 20px;
+    }
+
+    nav .nav-links .bx-menu{
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: var(--white-bg);
+    }
+
+    /* Articles  */
+    .article .article_decor {
+        flex-direction: column;
+        padding: 60px;
+        margin-bottom: 30px;
+    }
+
+    /* about  */
+    .about .about_decor {
+        flex-direction: column;
+    }
+
+    /* Subscribe  */
+    .subscribe .sub_info .signup_text{
+        margin-top: 3%;
+    }
+
+    .subscribe .sub_info .signup_text button{
+        padding: 12px 45px;
+    }
+
+    /* Footer  */
+
+    .footer .footer_info {
+        flex-direction: column;
+    }
+
+    .footer .footer_info P {
+        margin-top: 2%;
+    }
+}
